@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans>  
+    <bean id="Student" class="test.base.Student">  
+        <property name="name" value="bob"/>  
+        <property name="add" value="China"/>  
+    </bean>  
+  
+    <bean id="StudentService" class="test.base.StudentService">  
+        <property ref="Student"/>  
+    </bean>  
+    <Aop class="test.base.AopTestBase"></Aop>
+</beans>  
